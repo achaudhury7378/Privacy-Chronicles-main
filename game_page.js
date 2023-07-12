@@ -82,7 +82,6 @@ function check()
 	if(get_answer == "No")	
 	{
 			player1_status = "Won";
-		    // document.getElementById("player1_score").innerHTML = player1_score;
 			end_game(player1_status)
 	}
 	else
