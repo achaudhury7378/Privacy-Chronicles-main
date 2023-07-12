@@ -1,0 +1,57 @@
+body
+{
+	background: #ce4a4a;
+}
+
+	.login_div1 
+	{
+		background: white;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
+	#ID_DIV_1 , #ID_DIV_2
+	{
+		background: white;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
+#player1_name 
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+#question_number
+{
+	margin: auto;
+	width: 50%;
+	border: 3px solid rgb(0, 0, 0);
+	padding: 10px;
+}
+.timer-container {
+    position: absolute;
+    right: -20px;
+    width: 100px;
+    height: 40px;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
