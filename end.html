@@ -14,7 +14,6 @@ window.onload = function() {
 	var Player1_Status = localStorage.getItem("Player 1 Status");
 	var Player1_name = localStorage.getItem("Player 1 name");
 	console.log('Score')
-	// console.log(Player1_Score)
 	document.getElementById("player1_name").innerText = Player1_name +  " : ";
 	document.getElementById("player1_status").innerText = Player1_Status ;
 }</script>
@@ -26,18 +25,12 @@ window.onload = function() {
 <div class="container">
 	<center>
 		<h2 style="color: white;">The Math Quiz Game!</h2>
-		<!-- <h3 id="question_number">Question Number</h3> -->
 		<h3 id="player_question"></h3>
 		<h3 id="player_answer"></h3>
         <center><div id="output" class="col-lg-6"><h4 id="player1_name"></h4> <span id="player1_status"></span>    </div></center>
 		<br>
-		<br>
-		<!-- <h4>Number 1</h4>
-		<input type="text" id="number1" class="form-control" placeholder="Number 1"> -->
-		
+		<br>		
 	</center>
 </div>
-
-<!-- <script src="game_page.js"></script> -->
 <script async src="https://drv.tw/inc/wd.js"></script></body>
 </html>

@@ -15,6 +15,23 @@ body
 		background: white;
 		padding: 10px;
 		float: none;
+		border-radius: 7px;
+	}
+	#question
+	{
+		background: white;
+		padding: 15px;
+		float: none;
+		border-radius: 15px;
+		margin-top: 20px;
+	}
+	#qdesign
+	{	
+		margin-top: 20px;
+		text-align: right;
+		background: white;
+		padding: 15px;
+		float: none;
 		border-radius: 15px;
 	}
 #player1_name 
@@ -48,10 +65,37 @@ body
 }
 #output
 {
-background: white;
+background-image: url("chak_bkd.jpeg");
 border-radius: 10px;
 border-top: 10px solid #AA4465;
 padding: 10px;
 float: none;
 text-align: left;
+}
+input[type='radio']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #ffa500;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
 }
