@@ -19,19 +19,21 @@ body
 	}
 	#question
 	{	
+		color:rgb(255, 255, 255);
 		display:inline-block;
-		background: white;
+		background: rgb(73, 73, 73);
 		padding: 15px;
 		float: none;
 		border-radius: 15px;
 		margin-top: 20px;
 	}
 	#qdesign
-	{
+	{	
+		color:rgb(255, 255, 255);
 		display:inline-block;
 		margin-top: 20px;
 		text-align: right;
-		background: white;
+		background: rgb(73, 73, 73);
 		padding: 15px;
 		float: none;
 		border-radius: 15px;
@@ -95,7 +97,6 @@ input[type='radio']:after {
 	content: '';
 	display: inline-block;
 	visibility: visible;
-	border: 2px solid white;
 }
 
 input[type='radio']:checked:after {
@@ -109,16 +110,9 @@ input[type='radio']:checked:after {
 	content: '';
 	display: inline-block;
 	visibility: visible;
-	border: 2px solid white;
 }
 input[type=radio] + label {
 	display:inline-block;
 	margin:-2px;
 	padding: 4px 12px;
-	background-color: #f7f7f7;
-	border-color: #ddd;
-  }
-  
-  input[type=radio]:checked + label {
-	background-color: #e7e7e7;
-  }  
+  } 
