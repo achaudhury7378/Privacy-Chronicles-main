@@ -16,7 +16,8 @@ window.onload = function() {
 	console.log('Score')
 	document.getElementById("player1_name").innerText = Player1_name +  " : ";
 	document.getElementById("player1_status").innerText = Player1_Status ;
-}</script>
+}
+</script>
 </head>
 <body>
 
@@ -27,7 +28,18 @@ window.onload = function() {
 		<h2 style="color: white;">The Math Quiz Game!</h2>
 		<h3 id="player_question"></h3>
 		<h3 id="player_answer"></h3>
-        <center><div id="output" class="col-lg-6"><h4 id="player1_name"></h4> <span id="player1_status"></span>    </div></center>
+        <center>
+			<div id="output" class="col-lg-6">
+				<center>
+					<div id="outputend">
+						<span id="player1_name">
+						</span> 
+						<span id="player1_status">
+						</span>
+					</div>
+				</center>
+			</div>
+		</center>
 		<br>
 		<br>		
 	</center>

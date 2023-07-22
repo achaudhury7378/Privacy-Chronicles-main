@@ -48,16 +48,16 @@ function send() {
 	console.log(qnas.length)
 	question_num = question_num + 1;
 	if (question_num <= qnas.length-1){
-	var input_box = '<div id="question"><div style="white-space:nowrap;">';
+	var input_box = '<div style="float:left;"><img src="kid-avatar.png" alt="Trulli" width="50" height="50"/><div id="question">';
 
-	input_box += '<input type="radio" name="num" value={} onclick="check()"/><label for="10">{}</label><br>'.format(qnas[question_num][1],qnas[question_num][1]);
-	input_box += '<input type="radio" name="num" value={} onclick="check()"/><label for="10">{}</label><br>'.format(qnas[question_num][2],qnas[question_num][2]);
+	input_box += '<input type="radio" name="num" value={} onclick="check()"/><label for={}>{}</label>'.format(qnas[question_num][1],qnas[question_num][1],qnas[question_num][1]);
+	input_box += '<input type="radio" name="num" value={} onclick="check()"/><label for={}>{}</label>'.format(qnas[question_num][2],qnas[question_num][2],qnas[question_num][2]);
 	
-	input_box = input_box +  "</div></div>"
-    question_number = "<div id=qdesign>" + qnas[question_num][0] +"</div>";
-    row =  question_number + input_box; 
+	input_box = input_box + "</div></div>"
+    question_number = '<div style="float:right;"><div id=qdesign>' + qnas[question_num][0] +'</div><img src="sus-guy.png" alt="Trulli" width="50" height="50"/></div>';
+    row =  question_number +'<br>'+ input_box; 
+	console.log(row)
     document.getElementById("output").innerHTML = row;
-
 	}
 	else if(question_num == qnas.length){
 		player1_status = 'Lose';

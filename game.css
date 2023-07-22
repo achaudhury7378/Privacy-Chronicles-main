@@ -18,7 +18,8 @@ body
 		border-radius: 7px;
 	}
 	#question
-	{
+	{	
+		display:inline-block;
 		background: white;
 		padding: 15px;
 		float: none;
@@ -26,7 +27,8 @@ body
 		margin-top: 20px;
 	}
 	#qdesign
-	{	
+	{
+		display:inline-block;
 		margin-top: 20px;
 		text-align: right;
 		background: white;
@@ -65,12 +67,22 @@ body
 }
 #output
 {
+overflow: auto;
 background-image: url("chak_bkd.jpeg");
 border-radius: 10px;
 border-top: 10px solid #AA4465;
 padding: 10px;
 float: none;
 text-align: left;
+}
+#outputend
+{
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: center;
+background: white;
 }
 input[type='radio']:after {
 	width: 15px;
@@ -99,3 +111,14 @@ input[type='radio']:checked:after {
 	visibility: visible;
 	border: 2px solid white;
 }
+input[type=radio] + label {
+	display:inline-block;
+	margin:-2px;
+	padding: 4px 12px;
+	background-color: #f7f7f7;
+	border-color: #ddd;
+  }
+  
+  input[type=radio]:checked + label {
+	background-color: #e7e7e7;
+  }  
